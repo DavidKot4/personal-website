@@ -1,0 +1,62 @@
+/* The main hero container */
+.hero {
+    display: flex; /* Use Flexbox for easy alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    gap: 3rem;/* Add space between the image and the text */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Ensure text inside is centered */
+    height: 90vh; /* Make it take up most of the viewport height */
+    padding: 0 2rem; /* Add some padding on the sides for smaller screens */
+    background-color: #f4f4f4; /* A light grey background */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Your Name */
+.hero h1 {
+    font-size: 3.5rem; /* Large font size for impact */
+    margin-bottom: 0.5rem; /* Space below the name */
+    margin-top: 0; /* Remove default top margin */
+}
+
+/* Your Tagline */
+.hero h2 {
+    font-size: 1.5rem; /* Smaller than the name */
+    font-weight: 300; /* A lighter font weight */
+    margin-top: 0;
+    margin-bottom: 2rem; /* More space below the tagline */
+}
+
+/* Container for the buttons */
+.hero .button-container {
+    display: flex;
+    gap: 1rem; /* Space between the buttons */
+}
+
+/* Styling for the buttons (works for <button> or <a class="button">) */
+.hero button, .hero .button {
+    background-color: #007BFF; /* A nice blue */
+    color: white;
+    border: none;
+    padding: 1rem 2rem; /* Generous padding */
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none; /* Removes underline if it's an <a> tag */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+    transition: transform 0.2s ease-out, background-color 0.2s ease; /* Smooth transitions */
+}
+
+.hero button:hover, .hero .button:hover {
+    background-color: #0056b3; /* A darker blue on hover */
+    transform: translateY(-2px); /* Lifts the button slightly on hover */
+}
+
+.personal-image {
+    width: 400px; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    border-radius: 50%; /* This makes the image a circle */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Add a nice shadow */
+    
+}

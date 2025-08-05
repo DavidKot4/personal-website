@@ -1,0 +1,46 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 1rem 0;
+    position: sticky; /* Makes the navbar stick to the top on scroll */
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+nav ul {
+    list-style: none; /* Removes the default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* This is the key! It makes list items horizontal */
+    justify-content: center; /* Centers the links in the navbar */
+    gap: 2rem; /* Adds space between the links */
+}
+
+nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes the default underline */
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Adds space around the text for a larger clickable area */
+    border-radius: 5px; /* Slightly rounds the corners for the hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+nav a:hover{
+    background-color: #555;
+}
+
+section {
+    padding: 4rem 2rem; /* Adds space above/below and on the sides */
+    background-color: #f4f4f4; /* A light grey background */
+
+}
