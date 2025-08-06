@@ -6,6 +6,7 @@
     <title>Personal Website</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 <body>
@@ -14,25 +15,35 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            
         </ul>
     </nav>
 
-    <header class="hero" id="home">
-        
-        <img src="./assets/cat.jpg" class="personal-image"><img>
-
-        <div class="hero-text">
-            <h1>David Kotlowski</h1>
-            <h2>[TAGLINE]</h2>
-        </div>    
-        <div>
-            <button>View My Projects</button>
-            <button>Download my Resume</button>
-        </div>
-    </header>
-
     <main>
+
+        <section class="hero" id="home">
+            <img src="./assets/cat.jpg" class="personal-image"><img>
+
+            <div class="hero-text">
+                <h1>David Kotlowski</h1>
+                <h2>[TAGLINE]</h2>
+            </div>    
+            <div class="social-links">
+               
+                <a href="https://github.com/DavidKot4" target="_blank">
+                    <img src="./assets/github-mark.png"></img>
+                </a>
+
+                <a href="https://www.linkedin.com/in/david-kotlowski/" target="_blank">
+                    <img src="./assets/linked-in.png"></img>
+                </a>
+
+                <a href="" target="_blank">
+                    <img src="./assets/email.png"></img>
+                </a>                                
+            </div>
+        </section>
+
         
         <section id="projects">
 
@@ -49,11 +60,7 @@
             
         </section>
 
-        <section id="contact">
-
-            <p>Email Github LinkedIn</p>
-            
-        </section>
+        
     </main>
 
 </body>
