@@ -50,7 +50,7 @@ section {
 /* Styling for the entire projects section */
 #projects {
     background-color: #f4f4f4; /* A light background to separate it */
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
 }
 
@@ -132,4 +132,114 @@ section {
     padding: 0 1.5rem 1.5rem 1.5rem; /* Add padding to all sides except the top */
     display: flex;
     gap: 1rem;
+}
+
+/* =========================================
+   RESUME SECTION STYLES
+   ========================================= */
+
+/* Main container for the resume section */
+.resume-container {
+    max-width: 900px; /* Constrains width for better readability on large screens */
+    margin: 4rem auto; /* Centers the section and adds space above/below */
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white; /* A white background to separate it from the page */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+#resume h2 {
+    text-align: center; /* Center the "Resume" title */
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+/* --- Download Button --- */
+.resume-download {
+    text-align: center; /* Center the download button container */
+    margin-bottom: 3rem;
+}
+
+.resume-download .button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff; /* A nice blue, change as you like */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-download .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+/* --- Timeline Layout --- */
+.resume-category {
+    margin-bottom: 2.5rem;
+    padding-left: 2rem; /* Space for the timeline line and dot */
+    position: relative; /* Needed for positioning the pseudo-elements */
+    border-left: 3px solid #ddd; /* The main timeline bar */
+}
+
+/* Creates the "dot" on the timeline for each category start */
+.resume-category::before {
+    content: '';
+    position: absolute;
+    left: -9px; /* Position over the border-left */
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff; /* Dot color */
+    border-radius: 50%;
+    border: 3px solid #f9f9f9; /* Matches the section background to "cut out" the line */
+}
+
+
+.resume-category h3 {
+    margin-top: -5px; /* Adjust vertical alignment with the dot */
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Individual resume entries (like a specific job or degree) */
+.resume-item {
+    margin-bottom: 1.5rem;
+}
+
+.resume-item h4 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 0.25rem;
+}
+
+/* Styling for job titles, dates, GPA, etc. */
+.resume-item p {
+    margin: 0.25rem 0;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Make italicized text (like dates/location) a bit more subtle */
+.resume-item em {
+    color: #888;
+    font-style: normal; /* Optional: remove italics if you prefer */
+}
+
+/* Style for bullet points (job responsibilities) */
+.resume-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 0.5rem;
+}
+
+.resume-item li {
+    margin-bottom: 0.5rem;
+    color: #666;
 }
