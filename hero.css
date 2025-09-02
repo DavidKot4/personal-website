@@ -1,18 +1,24 @@
 /* The main hero container */
 .hero {
     display: flex; /* Use Flexbox for easy alignment */
-    flex-direction: column; /* Stack children vertically */
     justify-content: center; /* Center vertically */
-    gap: 3rem;/* Add space between the image and the text */
     align-items: center; /* Center horizontally */
-    text-align: center; /* Ensure text inside is centered */
     height: 100vh; /* Make it take up all of the viewport height */
-    padding: 0 2rem; /* Add some padding on the sides for smaller screens */
+    padding: 4rem 2rem; /* Add some padding on the sides for smaller screens */
     background-color: #f4f4f4; /* A light grey background */
     color: #333; /* Dark text for contrast */
 }
 
-/* Your Name */
+/* The new wrapper - this now controls the layout of the items inside */
+.hero-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;    /* Center the items (image, text, links) */
+    gap: 2rem;              /* Add space between the items */
+    text-align: center;     /* Ensure text inside is centered */
+}
+
+/* Name */
 .hero h1 {
     font-size: 3.5rem; /* Large font size for impact */
     margin-bottom: 0.5rem; /* Space below the name */
@@ -29,8 +35,11 @@
 
 
 .personal-image {
-    width: 400px; /* Set a fixed width */
-    height: 400px; /* Set a fixed height */
+    /* Responsive Sizing */
+    max-width: 400px;  /* The largest the image can be */
+    min-width: 150px;  /* The smallest the image can be */
+    width: 50vw;       /* Tells the image to be 30% of the screen's width */
+    height: auto;      /* Allows height to adjust automatically to maintain the shape */
     border-radius: 50%; /* This makes the image a circle */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Add a nice shadow */
