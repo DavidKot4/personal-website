@@ -36,7 +36,7 @@
 
 .personal-image {
     /* Responsive Sizing */
-    max-width: 400px;  /* The largest the image can be */
+    max-width: 350px;  /* The largest the image can be */
     min-width: 150px;  /* The smallest the image can be */
     width: 50vw;       /* Tells the image to be 30% of the screen's width */
     height: auto;      /* Allows height to adjust automatically to maintain the shape */
