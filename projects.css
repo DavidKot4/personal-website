@@ -1,0 +1,86 @@
+/* Styling for the entire projects section */
+#projects {
+    background-color: #f4f4f4; /* A light background to separate it */
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem; /* Space between title and cards */
+}
+
+/* The Grid Container */
+.projects-grid {
+    display: grid;
+    /* This is the key for responsiveness! */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+
+/* The main card container */
+.project-card {
+    background-color: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures the image respects the rounded corners */
+    display: flex;
+    flex-direction: column; /* Stacks image, info, and links vertically */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    text-align: left; /* Aligns text inside the card to the left */
+}
+
+/* Hover effect for the entire card */
+.project-card:hover {
+    transform: translateY(-5px); /* Lifts the card up slightly */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* A more pronounced shadow */
+}
+
+/* The project image */
+.project-card img {
+    width: 100%;
+    height: 200px; /* A fixed height for consistency */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+/* The container for all text content */
+.project-info {
+    padding: 1.5rem;
+    flex-grow: 1; /* Allows this section to grow, pushing the links to the bottom */
+}
+
+.project-info h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.project-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* The container for tech stack pills */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap; /* Allows pills to wrap if needed */
+    gap: 0.5rem;
+}
+
+.tech-stack span {
+    background-color: #e2e8f0;
+    color: #4a5568;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* The container for the buttons at the bottom */
+.project-links {
+    padding: 0 1.5rem 1.5rem 1.5rem; /* Add padding to all sides except the top */
+    display: flex;
+    gap: 1rem;
+}
